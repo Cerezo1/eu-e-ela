@@ -193,15 +193,17 @@ document.addEventListener('click', unmuteVideo);
 
 <script>
 
-// document.addEventListener("mousedown", function() {
+document.addEventListener("mousedown", function() {
     
-//     document.getElementsByTagName("audio")[0].play();
-// })
+    document.getElementsByTagName("audio")[0].pause();
+})
 
 document.addEventListener("scroll", function() {
     
     document.getElementsByTagName("audio")[0].play();
 })
+
+
 
 </script>
     <script>
