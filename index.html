@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGMDAwMCI+PHBhdGggZD0iTTEyIDIxLjM1bC0xLjQ1LTEuMzJDNS40IDE1LjM2IDIgMTIuMjggMiA4LjUgMiA1LjQyIDQuNDIgMyA3LjUgM2MxLjc0IDAgMy40MS44MSA0LjUgMi4wOUMxMy4wOSAzLjgxIDE0Ljc2IDMgMTYuNSAzIDE5LjU4IDMgMjIgNS40MiAyMiA4LjVjMCAzLjc4LTMuNCA2Ljg2LTguNTUgMTEuNTRMMTIgMjEuMzV6Ii8+PC9zdmc+" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geovano e Gabriela</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+        <link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0iI0ZGMDAwMCI+PHBhdGggZD0iTTEyIDIxLjM1bC0xLjQ1LTEuMzJDNS40IDE1LjM2IDIgMTIuMjggMiA4LjUgMiA1LjQyIDQuNDIgMyA3LjUgM2MxLjc0IDAgMy40MS44MSA0LjUgMi4wOUMxMy4wOSAzLjgxIDE0Ljc2IDMgMTYuNSAzIDE5LjU4IDMgMjIgNS40MiAyMiA4LjVjMCAzLjc4LTMuNCA2Ljg2LTguNTUgMTEuNTRMMTIgMjEuMzV6Ii8+PC9zdmc+" type="image/x-icon">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            margin: 0;
+            background-color: #030D21;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            overflow-y: auto;
+            padding-top:30px;
+        }
+        .container {
+            max-width: 400px;
+            width: 100%;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .carousel {
+            margin-bottom: 20px;
+        }
+        .carousel img {
+        
+            width: 100%;
+            height: 500px; /* Altura fixa para as imagens */
+            border-radius: 15px;
+        }
+        .paragrafos{
+            text-align: justify;
+        }
+        p.date {
+            font-size: 0.8em;
+            color: #718096;
+        }
+        .counter {
+            color: #fff;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+        .counter-item {
+            display: inline;
+            margin: 0 1px;
+        }
+        .counter-item p {
+            margin: 0;
+            display: inline;
+            font-size: 1em;
+        }
+        .counter-item span {
+            display: inline;
+            margin-left: 5px;
+        }
+        hr.separator {
+            margin: 40px auto;
+            border: none;
+            border-top: 0.1px solid #5D6471; /* Linha mais fina e cor mais clara */
+            width: 70%;
+        }
+       
+        .heart {
+            position: absolute;
+            top: -50px;
+            font-size: 24px;
+            color: #FF4B4B;
+            animation: fall 5s ease-out;
+        }
+        .fixed-heart {
+            bottom: 20px;
+            font-size: 20px;
+            color: #FF4B4B;
+        }
+              .heart-fall {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            font-size: 30px;
+            color: #FF4B4B;
+            opacity: 0;
+            animation: fall 2s forwards;
+            }
+            
+        @keyframes fall {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+
+        }
+
+    </style>
+</head>
+<body onscroll="reproduzirAudio">
+    <div class="container">
+        <div class="carousel">
+            <div><img src="Foto01.jpg" alt="Imagem 1"></div>
+            <div><img src="Foto02.jpg" alt="Imagem 2"></div>
+            <div><img src="Foto03.jpg" alt="Imagem 3"></div>
+            <div><img src="Foto04.jpg" alt="Imagem 4"></div>
+            <div><img src="Foto05.jpg" alt="Imagem 5"></div>
+            <div><img src="Foto06.jpg" alt="Imagem 6"></div>
+            <div><img src="Foto07.jpg" alt="Imagem 7"></div>
+            <div><img src="Foto08.jpg" alt="Imagem 8"></div>
+            <div><img src="Foto09.jpg" alt="Imagem 9"></div>
+            <div><img src="Foto10.jpg" alt="Imagem 10"></div>
+            <div><img src="Foto11.jpg" alt="Imagem 11"></div>
+            <div><img src="Foto12.jpg" alt="Imagem 12"></div>
+            <div><img src="Foto13.jpg" alt="Imagem 13"></div>
+            <div><img src="Foto14.jpg" alt="Imagem 14"></div>
+            <div><img src="Foto15.jpg" alt="Imagem 15"></div>
+            <div><img src="Foto16.jpg" alt="Imagem 16"></div>
+            <div><img src="Foto17.jpg" alt="Imagem 17"></div>
+            <div><img src="Foto18.jpg" alt="Imagem 18"></div>
+            <div><img src="Foto19.jpg" alt="Imagem 19"></div>
+            <div><img src="Foto20.jpg" alt="Imagem 20"></div>
+            <div><img src="Foto21.jpg" alt="Imagem 21"></div>
+            <div><img src="Foto22.jpg" alt="Imagem 22"></div>
+            
+        </div>
+       
+        <p class="date">Juntos: </p>
+        <div class="counter">
+            <span class="counter-item"><p id="years">0</p><span id="years-label">anos</span></span>,
+            <span class="counter-item"><p id="months">0</p><span id="months-label">meses</span></span>,
+            <span class="counter-item"><p id="days">0</p><span id="days-label">dias</span></span>
+        </div>
+        <div class="counter">
+            <span class="counter-item"><p id="hours">0</p><span id="hours-label">horas</span></span>,
+            <span class="counter-item"><p id="minutes">0</p><span id="minutes-label">minutos</span></span> e
+            <span class="counter-item"><p id="seconds">0</p><span id="seconds-label">segundos</span></span>
+        </div>
+        <div class="fixed-heart">
+            <i class="fas fa-heart "></i>
+        </div>
+        <hr class="separator">
+        <div class="message">
+            <p class="paragrafos">Desculpa por ter demorado tanto tempo para chegar em sua vida, mas saiba que desde quando cheguei, me dediquei ao máximo a você.
+
+            Sempre fui, sou e serei o melhor namorado, parceiro e marido. Busco dar meus 100% todos os dias a você e ao nosso casamento.</p>
+            <p> </p>
+            <p class="paragrafos">Para sempre ainda é pouco para dizer o quanto eu amo você! 
+               Parabéns para nós!</p>
+            <p> </p>
+            <p class="paragrafos">Que venham mais 10, 20, 30, 100 anos junto com você, minha mulher, guerreira, parceira e  todos os outros adjetivos que descrevem o que é ser uma verdadeira esposa(você).</p>
+            <p class="paragrafos">Uma década de amor, parceria, cumplicidade. Passamos por momentos difíceis, vi você em fases que não gostaria de ter visto, mas sou grato por ter conseguido te ajudar a superar aqueles obstáculos, mesmo que com apenas minha companhia, meu ombro.</p>
+            <p class="paragrafos">Os anos passaram devagar nos momentos ruins, de desafios e voando nos momentos bons. Criamos muitas memórias que ficarão nas nossas mentes por muitos anos. Mudamos e evoluímos bastante, conquistamos muitas coisas, sei que ainda não temos tudo que desejamos, mas estamos trabalhando para isso e tenho certeza que logo alcançaremos nossos objetivos e realizaremos nossos sonhos. Continuo dizendo que ainda te darei o mundo. Inicia-se um novo ciclo, o ciclo da segunda década e espero que seja a segunda década de uma eternidade. Eu te amo!</p>
+            <p class="paragrafos">Decidi ter você de vez comigo, definir meu futuro ao lado do teu, são dois planos, são três desejos meus: Ser teu bem, teu amor e teu abrigo. O primeiro pra começar, eu te digo, me namora que te cuido à moda antiga, que pra nós só vai ter uma saída, um noivado findando em casamento. E na hora que Deus der o nosso rebento, eis o dia que vou zerar a minha vida.</p>
+            <p class="paragrafos">Eu tenho dois planos, você tá nos dois, aceite o primeiro e o outro depois, então senta aqui, vamos conversar, o primeiro plano é te namorar. O segundo plano também tem você, aceite o primeiro e tu vai entender que na fase dois, vou viver do teu lado, prometo ser teu eterno namorado. Tranca seu coração, não entra ninguém, nós dois pra sempre, larga tudo e vem.</p>
+            <p class="paragrafos">Prometo ser fiel no bom ou no ruim, vai ser de nós dois, o que Deus der pra mim e se ele ainda me der um filho teu, eu zero a vida, ele, você e eu.</p>
+        </div>
+
+        <div>
+            <audio src="musica.mp3" width="100%" height="400px" poster="banner01.jpeg"></audio>
+
+        </div>
+
+        </div>
+    </div>
+    <i class="fas fa-heart heart"></i>
+    <i class="fas fa-heart heart"></i>
+    <i class="fas fa-heart heart"></i>
+    <i class="fas fa-heart heart"></i>
+    <i class="fas fa-heart heart"></i>
+  
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <!-- <script>
+// Função para desmutar o vídeo
+function unmuteVideo() {
+const youtubeVideo = document.getElementById('youtube-video');
+
+// Verifica se o iframe existe
+if (youtubeVideo) {
+// Envia uma mensagem para o iframe pedindo para desmutar
+const playerId = youtubeVideo.id;
+const message = {
+    event: 'command',
+    func: 'unMute',
+    args: []
+};
+
+// Envia a mensagem para o iframe do YouTube
+youtubeVideo.contentWindow.postMessage(JSON.stringify(message), '*');
+}
+}
+
+// Adiciona evento de clique ao documento
+document.addEventListener('click', unmuteVideo);
+
+</script> -->
+
+<script>
+
+document.addEventListener("mousedown", function() {
+    
+    document.getElementsByTagName("audio")[0].pause();
+})
+
+document.addEventListener("scroll", function() {
+    
+    document.getElementsByTagName("audio")[0].play();
+})
+
+
+
+</script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                arrows: true,
+                dots: true
+            });
+
+             // Função para criar corações caindo
+            function createHearts() {
+                for (let i = 0; i < 30; i++) {
+                    const heart = $('<i class="fas fa-heart heart-fall"></i>');
+                    const randomLeft = Math.random() * 100;
+                    const randomDelay = Math.random() * 2;
+                    heart.css({
+                        left: randomLeft + '%',
+                        animationDelay: randomDelay + 's'
+                    });
+                    $('body').append(heart);
+                }
+
+                setTimeout(function() {
+                    $('.heart-fall').remove(); // Remove os corações após 2 segundos
+                }, 3000);
+            }
+
+            createHearts()
+            setInterval(createHearts, 10000); // Inicia a animação dos corações caindo
+
+        });
+
+        const relationshipDate = new Date('2015-02-07');
+        
+        function calculateTimeDifference(startDate, endDate) {
+            const a = startDate;
+            const s = endDate;
+            let r = s.getFullYear() - a.getFullYear();
+            let i = s.getMonth() - a.getMonth();
+            let l = s.getDate() - a.getDate();
+            let n = s.getHours() - a.getHours() - (s.getTimezoneOffset() / 60); // Corrigindo o fuso horário
+            let o = s.getMinutes() - a.getMinutes();
+            let c = s.getSeconds() - a.getSeconds();
+
+            if (c < 0) {
+                c += 60;
+                o--;
+            }
+            if (o < 0) {
+                o += 60;
+                n--;
+            }
+            if (n < 0) {
+                n += 24;
+                l--;
+            }
+            if (l < 0) {
+                const daysInMonth = new Date(s.getFullYear(), s.getMonth(), 0).getDate();
+                l += daysInMonth;
+                i--;
+            }
+            if (i < 0) {
+                i += 12;
+                r--;
+            }
+
+            return { years: r, months: i, days: l, hours: n, minutes: o, seconds: c };
+        }
+
+        function updateCounter() {
+            const now = new Date();
+            const diff = calculateTimeDifference(relationshipDate, now);
+
+            document.getElementById('years').textContent = diff.years;
+            document.getElementById('months').textContent = diff.months;
+            document.getElementById('days').textContent = diff.days;
+            document.getElementById('hours').textContent = diff.hours;
+            document.getElementById('minutes').textContent = diff.minutes;
+            document.getElementById('seconds').textContent = diff.seconds;
+
+            document.getElementById('years-label').textContent = diff.years === 1 ? 'ano' : 'anos';
+            document.getElementById('months-label').textContent = diff.months === 1 ? 'mês' : 'meses';
+            document.getElementById('days-label').textContent = diff.days === 1 ? 'dia' : 'dias';
+            document.getElementById('hours-label').textContent = diff.hours === 1 ? 'hora' : 'horas';
+            document.getElementById('minutes-label').textContent = diff.minutes === 1 ? 'minuto' : 'minutos';
+            document.getElementById('seconds-label').textContent = diff.seconds === 1 ? 'segundo' : 'segundos';
+        }
+
+        setInterval(updateCounter, 1000);
+    </script>
+</body>
+</html>
